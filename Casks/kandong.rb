@@ -1,6 +1,6 @@
 cask "kandong" do
-  version "0.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.1.0"
+  sha256 "8a84b0d1818f37173955b11031ac9e4464cb30b37829c5c21ed3091d7352de6d"
 
   url "https://github.com/Tien-Cheng/kandong/releases/download/v#{version}/Kandong-#{version}.zip"
   name "Kandong"
