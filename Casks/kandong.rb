@@ -1,6 +1,6 @@
 cask "kandong" do
-  version "0.1.0"
-  sha256 "8a84b0d1818f37173955b11031ac9e4464cb30b37829c5c21ed3091d7352de6d"
+  version "0.2.0"
+  sha256 "1cc94ce52ab8c87d9e04b7ae7fa52d88549250f46eeccfe057c9d688000d0a34"
 
   url "https://github.com/Tien-Cheng/kandong/releases/download/v#{version}/Kandong-#{version}.zip"
   name "Kandong"
@@ -13,7 +13,7 @@ cask "kandong" do
     strategy :github_latest
   end
 
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   app "Kandong.app"
 
@@ -29,6 +29,6 @@ cask "kandong" do
     Kandong isn't notarized by Apple, so macOS blocks its first launch.
     Open it once, then go to System Settings → Privacy & Security and click "Open Anyway".
 
-    Translations need the Codex CLI (`codex login`) or LM Studio.
+    Translations use Apple Intelligence (turn it on in System Settings); Codex and LM Studio also work.
   EOS
 end
