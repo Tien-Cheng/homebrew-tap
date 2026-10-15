@@ -1,6 +1,6 @@
 cask "kandong" do
-  version "0.5.0"
-  sha256 "d1b9be5875aa7fef94e94a9b5bb22b10b1e1b5635990953649a50642133d51d2"
+  version "0.5.1"
+  sha256 "b40d1d747eb3070e0a6596fa564540c759a18dfbbad566f1487fa880080c4b48"
 
   url "https://github.com/Tien-Cheng/kandong/releases/download/v#{version}/Kandong-#{version}.zip"
   name "Kandong"
@@ -14,7 +14,7 @@ cask "kandong" do
   end
 
   auto_updates true
-  depends_on macos: :golden_gate
+  depends_on macos: :tahoe
 
   app "Kandong.app"
 
